@@ -1,0 +1,12 @@
+require_relative '../constructor.rb'
+
+_hts_ = {
+  :nick     => 'BotWarz',
+  :server   => 'irc.hackthissite.org',
+  :port     => 6667,
+  :channels => '#bots'
+}
+
+hts = bot_construct(_hts_)
+hts.info
+hts.connect
